@@ -4,7 +4,7 @@ interface IProps {
   text: string;
 }
 
-const NoResults = ({ text }: Iprops) => {
+const NoResults = ({ text }: IProps) => {
   return (
     <div>NoResults</div>
   )

@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Video } from '../types';
 import { NextPage } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
+import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs';
+import { GoVerified } from 'react-icons/go'
 
-interface IPorps {
+interface IProps {
   post: Video;
 }
 
-const VideoCard: NextPage<IPorps> = ({ post }) => {
+const VideoCard: NextPage<IProps> = ({ post }) => {
   return (
     <div>VideoCard</div>
   )
